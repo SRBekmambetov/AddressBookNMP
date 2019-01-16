@@ -1,0 +1,21 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: root
+        url: jdbc:postgresql://localhost:5432/AddressBook
+        username: root
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                temp:
+                    use_jdbc_metadata_defaults: false
+        show-sql: true
+
+logging:
+  file: c:\tmp\logs\app.log
+
+  level:
+    ROOT: warn
+    org.springframework: INFO
+    org.hibernate: INFO
